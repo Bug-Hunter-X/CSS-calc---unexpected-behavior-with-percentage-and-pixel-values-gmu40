@@ -1,0 +1,20 @@
+/* Solution: Using Flexbox for precise control */
+
+.container {
+display: flex;
+width: 50%; /* Initial width */
+}
+
+.element {
+  margin-left: 10px; /* Adjust margin instead of direct calc() */
+}
+
+/* Alternative Solution: Using Grid for precise control*/
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)); /* Adaptable grid */
+grid-gap: 10px;/* Add gap instead of subtracting directly*/
+}
+
+/* Avoid using calc(50% - 10px) for width*/
